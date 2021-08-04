@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../../logo.jpeg">
+    <meta charset="UTF-8">
+    <title>Sreenivasa | Board of Governors</title>
+    <!--Style Starts-->
+    <link rel="icon" type="image/png" href="img/IIITV_Logo_1x1_small.png">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Board of Governors.css">
+</head>
+
+<body>
+    <!-- Start Your Body Code From here -->
+    <div class="wrapper">
+        <div class="navigationDiv">
+            <a href="../Senate/senate.html"><strong>Senate</strong></a>
+            <a href="Board of Governors.html"><strong>Board of Governors</strong></a>
+            <a href="../Director/Director.html"><strong>Director</strong></a>
+            <a href="../Student Representation/Student Representation.html"><strong>Student representation</strong></a>
+        </div>
+        <div class="contents-wrapper">
+            <!-- Contents starts here -->
+            <div class="content">
+                <h2><strong> Board of Governors</strong></h2>
+                <br />
+                <table class="table table-responsive table-bordered">
+                    <thead>
+                        <tr>
+                            <th><strong>S.No</strong>.</th>
+                            <th><strong>Provision as per Section 4(a) of MoA</strong></th>
+                            <th><strong>Name and designation of Nominee</strong></th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Chairperson, <b>ex-officio;</b></td>
+                        <td>Ms. Chanda Kochhar, MD & CEO, SBI Bank Ltd</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            One nominees of the Central Government being:<br /><br />
+                            (a) dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt;<br />
+                            (b) incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam
+                        </td>
+                        <td>Joint Secretary (IIITs)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            One nominee of State Government being:<br /><br />
+                            (a) veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip;<br />
+                            (b) quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.<b>ex-officio</b><br />
+                        </td>
+                        <td>To be nominated by the State Government</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            Two senior-most Deans of the Institute, <b>ex-officio;</b>
+                        </td>
+                        <td>The two senior most Dean of the Mentoring Institute till the appointment of permanent
+                            faculty.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <p>
+                                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempo<b>ex-officio;</b>
+                            </p>
+                            <p style="font-style: italic">
+                                (Explanation - for the purpose of this clause, "Zone" shall have the meaning assigned to
+                                it
+                                in the Explanation to section 11 of the Institutes of Technology Act, 1961.)
+                            </p>
+                        </td>
+                        <td>Director, IIT-Gandhinagar</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Director of National Institute of Technology of the State in which the Institute is located,
+                            <b>ex-officio;</b>
+                        </td>
+                        <td>Director, SVNIT, Surat</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Director of the Institute, who shall be the Member-Secretary of the Board,
+                            <b>ex-officio;</b>
+                        </td>
+                        <td>Mentor Director, IIIT-Vadodara till the appointment of regular Director</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Footer -->
+
+    </div>
+    <!--Scripts Starts-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script>
+        $(document).on('click', function (e) {
+            var
+                $popover,
+                $target = $(e.target);
+
+            //do nothing if there was a click on popover content
+            if ($target.hasClass('popover') || $target.closest('.popover').length) {
+                return;
+            }
+
+            $('[data-toggle="popover"]').each(function () {
+                $popover = $(this);
+
+                if (!$popover.is(e.target) &&
+                    $popover.has(e.target).length === 0 &&
+                    $('.popover').has(e.target).length === 0) {
+                    $popover.popover('hide');
+                } else {
+                    //fixes issue described above
+                    $popover.popover('toggle');
+                }
+            });
+        })
+
+
+    </script>
+</body>
+
+
+</html>

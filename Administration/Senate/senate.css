@@ -1,0 +1,109 @@
+/* *General Styles */
+
+.primary-color{
+	color:rgb(15,108,107) !important;
+}
+
+strong{
+	font-weight: bold;
+}
+
+html,body{
+	height: 100%
+	
+}
+
+body{
+	color: black;
+	font-family: 'Oxygen',sans-serif;
+	min-height: 100%;
+}
+
+/* ***********
+Navigation
+********** */
+
+.navigationDiv{
+	padding: 20px;
+	/* margin-top: 20px; */
+	position: fixed;
+	 background-color: rgb(8, 8, 151);
+	 text-align: center;
+	 width: 100%;
+     top: 0;
+     left: 0;
+	 text-decoration: underline;
+}
+.navigationDiv a{
+	color: white;
+	margin: 10px 20px;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	/* background-color: aqua; */
+	font-size: 20px;
+	
+}
+.navigationDiv a.active{
+	background-color: red;
+}
+.navigationDiv a:hover{
+	background-color: white;
+	color: rgb(0, 0, 0);
+	border-radius: 8px;
+}
+
+/***************
+*Wrappers
+****************/
+
+.wrapper{
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+}
+
+.contents-wrapper{
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.contents-wrapper{
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	flex:1;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.contents-wrapper .content{
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+
+/* ******
+table
+****** */
+
+.table{
+    /* text-align: center; */
+    border: 1px solid black;
+    border-spacing: 0!important;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+.table tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0!important;
+    padding: 10px 15px;
+  }
+
+  .table tr th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0!important;
+    padding: 10px 15px;
+  }
