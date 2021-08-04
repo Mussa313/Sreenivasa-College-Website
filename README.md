@@ -1,1 +1,1 @@
-# Sreenivasa-college-Website
+# Sreenivasa-College-Website
